@@ -146,7 +146,7 @@ export function CTABanner() {
                 display: "inline-block",
               }}
             >
-              Start your project
+                storyline
             </motion.a>
           </motion.div>
         </motion.div>
