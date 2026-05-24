@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence } from "motion/react";
+import { Analytics } from "@vercel/analytics/react";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { Navbar } from "./components/Navbar";
 import { HeroSection } from "./components/HeroSection";
@@ -15,6 +16,7 @@ export default function App() {
 
   return (
     <div style={{ backgroundColor: "#0A0A0F", minHeight: "100vh" }}>
+      <Analytics />
       <AnimatePresence mode="wait">
         {isLoading && (
           <LoadingScreen onComplete={() => setIsLoading(false)} />
